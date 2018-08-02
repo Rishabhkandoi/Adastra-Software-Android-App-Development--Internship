@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hp.chhabras">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".splash_screen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity" android:theme="@style/AppTheme.NoActionBar" android:label="Home"/>
+        <activity android:name=".Overview" android:label="Overview" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Dialog_select_outlet" android:theme="@style/MyTheme"/>
+        <activity android:name=".Gallery" android:label="Gallery" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".FullImage" android:label="Chhabra" android:theme="@style/fullImageToolbar" android:parentActivityName=".Gallery"/>
+        <activity android:name=".Outlet" android:label="Outlets" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Outlet_detail" android:label="Outlet Details" android:parentActivityName=".Outlet"/>
+        <activity android:name=".Enquiry_Contact" android:label="Enquiry" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Offers" android:label="Offers" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Login" android:theme="@style/MyTheme"/>
+        <activity android:name=".Items" android:label="Items" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Cart" android:label="Cart" android:parentActivityName=".MainActivity"/>
+
+    </application>
+
+</manifest>

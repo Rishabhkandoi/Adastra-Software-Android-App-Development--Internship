@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/border"
+    android:layout_marginBottom="10dp">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/veg_symbol"
+        android:id="@+id/temp1"
+        android:layout_marginRight="5dp"
+        android:textColor="#000"
+        android:textSize="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/temp"
+        android:layout_toRightOf="@id/temp1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:id="@+id/item_name"
+            android:textSize="13dp"
+            android:text="Item Name"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_per_kg_price"
+            android:textSize="7dp"
+            android:text="Per kg price"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_price"
+            android:textSize="15dp"
+            android:text="Price"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/temp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/cart_add_button"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/add"
+            android:text="ADD"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/incDecLayout"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/cart_add_button"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/inc"
+            android:text="+"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/num"
+            android:text="0"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:background="@android:color/holo_green_dark"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/dec"
+            android:text="-"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="@android:color/holo_green_dark" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
